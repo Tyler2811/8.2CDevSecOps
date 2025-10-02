@@ -14,7 +14,7 @@ pipeline {
             steps {
                 sh 'npm install'
                 sh 'npm run build'
-                archiveArtifacts artifacts: 'build/**', fingerprint: true
+                archiveArtifacts artifacts: 'public/js/bundle.js'
             }
         }
 
