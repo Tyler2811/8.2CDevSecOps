@@ -44,5 +44,24 @@ pipeline {
                 sh 'npm audit || true'
             }
         }
+
+        stage('Deploy') {
+            steps {
+                echo 'Deploy stage - not implemented for this project'
+            }
+        }
+        
+        stage('Release') {
+            steps {
+                echo 'Release stage - not implemented for this project'
+            }
+        }
+        
+        stage('Monitoring') {
+            steps {
+                echo 'Monitoring stage - not implemented for this project'
+            }
+        }
+
     }
 }
